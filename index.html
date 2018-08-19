@@ -33,6 +33,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" integrity="sha256-ENFZrbVzylNbgnXx0n3I1g//2WeO47XxoPe0vkp3NC8=" crossorigin="anonymous" />
+
 
   </head>
 
@@ -55,7 +57,7 @@
               <a class="nav-link js-scroll-trigger" href="#projects">BAP Curriculum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#signup">Newsletter</a>
             </li>
           </ul>
         </div>
@@ -259,9 +261,9 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
 
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            <form class="form-inline d-flex" id="newsletterForm">
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." required="">
+              <button type="submit" class="btn btn-primary mx-auto" id="btnSubscribe">Subscribe</button>
             </form>
 
           </div>
@@ -344,7 +346,24 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDDWqoH4SiVDPb_Sr0QxXanzOcxSfG3AmA",
+    authDomain: "thegeeksontv-fdeab.firebaseapp.com",
+    databaseURL: "https://thegeeksontv-fdeab.firebaseio.com",
+    projectId: "thegeeksontv-fdeab"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+<script src="js/grayscale.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha256-3blsJd4Hli/7wCQ+bmgXfOdK7p/ZUMtPXY08jmxSSgk=" crossorigin="anonymous"></script>
+<script src="js/newsletter.js"></script>
+
 
   </body>
 </html>
