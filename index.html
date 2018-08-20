@@ -35,6 +35,11 @@
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" integrity="sha256-ENFZrbVzylNbgnXx0n3I1g//2WeO47XxoPe0vkp3NC8=" crossorigin="anonymous" />
 
+<style>
+.offset-top { 
+  margin-top: 20px;
+  }
+</style>
 
   </head>
 
@@ -241,7 +246,7 @@
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
                   <h4 class="text-white">MODULE EIGHT</h4>
-                  <p class="mb-0 text-white-50">At this point, we put everything you have learned into building projects you can put on your resume and showcase during a job hunt.</p>
+                  <p class="mb-0 text-white-50">At this point, we put everything you have learned into building projects you can put on your résumé and showcase during a job hunt.</p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
@@ -261,10 +266,48 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
 
-            <form class="form-inline d-flex" id="newsletterForm">
+          <!--   <form class="form-inline d-flex" id="newsletterForm">
               <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." required="">
               <button type="submit" class="btn btn-primary mx-auto" id="btnSubscribe">Subscribe</button>
-            </form>
+            </form> -->
+
+
+<!-- Begin MailChimp Signup Form -->
+
+ <form action="https://thegeeksontv.us19.list-manage.com/subscribe/post?u=112b62f488b9a5e33c9148db4&amp;id=a517327c61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline d-flex" target="_blank" novalidate>
+  <div class="col-md-12">
+      <div class="form-group">
+        <input type="email" value="" name="EMAIL" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="mce-EMAIL"  placeholder="Enter email address...">
+      </div>
+  </div>
+  
+  <div class="col-md-6 offset-top">
+      <div class="form-group">
+        <input type="text" value="" name="FNAME" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="mce-FNAME" placeholder="First Name">
+      </div>
+  </div>
+
+  <div class="col-md-6 offset-top">
+      <div class="form-group">
+        <input type="text" value="" name="LNAME" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="mce-LNAME" placeholder="Last Name">
+      </div>
+  </div>
+
+  <div class="col-md-12 offset-top">
+    <div class="float-left">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary mx-auto">
+    </div>
+  </div>
+  <input type="text" name="b_112b62f488b9a5e33c9148db4_a517327c61" tabindex="-1" style="display: none">
+</form>
+
+<!--End mc_embed_signup-->
+
+
+
+
+
+
 
           </div>
         </div>
@@ -347,23 +390,7 @@
 
     <!-- Custom scripts for this template -->
 
-
-<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDDWqoH4SiVDPb_Sr0QxXanzOcxSfG3AmA",
-    authDomain: "thegeeksontv-fdeab.firebaseapp.com",
-    databaseURL: "https://thegeeksontv-fdeab.firebaseio.com",
-    projectId: "thegeeksontv-fdeab"
-  };
-  firebase.initializeApp(config);
-</script>
-    
-<script src="js/grayscale.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha256-3blsJd4Hli/7wCQ+bmgXfOdK7p/ZUMtPXY08jmxSSgk=" crossorigin="anonymous"></script>
-<script src="js/newsletter.js"></script>
-
+    <script src="js/grayscale.min.js"></script>
 
   </body>
 </html>
