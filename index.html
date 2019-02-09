@@ -11,23 +11,6 @@
     <script type="text/javascript">
       document.documentElement.className = "js";
     </script>
-    <script>
-      var et_site_url = "https://www.elegantthemes.com/preview/Divi";
-      var et_post_id = "47230";
-      function et_core_page_resource_fallback(a, b) {
-        "undefined" === typeof b &&
-          (b = a.sheet.cssRules && 0 === a.sheet.cssRules.length);
-        b &&
-          ((a.onerror = null),
-          (a.onload = null),
-          a.href
-            ? (a.href =
-                et_site_url + "/?et_core_page_resource=" + a.id + et_post_id)
-            : a.src &&
-              (a.src =
-                et_site_url + "/?et_core_page_resource=" + a.id + et_post_id));
-      }
-    </script>
     <title>LMS Landing | Divi, The Ultimate WordPress Theme</title>
     <meta name="robots" content="noindex,follow" />
     <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
@@ -288,8 +271,6 @@
       rel="stylesheet"
       id="et-core-unified-cached-inline-styles"
       href="css/et-core-unified-15494270205051.min.css"
-      onerror="et_core_page_resource_fallback(this, true)"
-      onload="et_core_page_resource_fallback(this)"
     />
   </head>
   <body
