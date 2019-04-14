@@ -257,6 +257,14 @@
     type="text/css"
     media="all"
   />
+  <style>
+    div.et_pb_pricing_table.et_pb_pricing_table_1 > div.et_pb_button_wrapper {
+      margin-top: 20px !important; 
+    }
+    div.et_pb_pricing_table.et_pb_pricing_table_2 > div.et_pb_button_wrapper {
+      margin-top: 60px !important;
+    }
+  </style>
   </head>
 
   <body
@@ -268,7 +276,8 @@
               <img src="img/site/logo.svg" alt="thegeeksontv logo" width="200px"/>
             </a>
             <nav class="header-right">
-              <a class="active" href="#home">Pricing</a>
+                <a href="landing.html">Home</a>
+              <a class="active" href="#">Pricing</a>
               <a href="#contact">Login</a>
               <a href="#about">Register</a>
               <a href="#about">FAQs</a>
@@ -1240,7 +1249,6 @@
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/wp-embed.min.js"></script>
     <script type="text/javascript" src="js/cookie.min.js"></script>
-    <script type="text/javascript" src="js/cookie-consent.min.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.0.min.js"
     integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
@@ -1253,7 +1261,6 @@ $(window).scroll(function() {
 
   // .scrollTop() retrieves vertical position of the scroll bar for the first element in a set of matched elements
   var scroll = $(window).scrollTop();
-console.log(scroll);
   if (scroll > 1000) {
     $('.header').show(1000);
   } else {
