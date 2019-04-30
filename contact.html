@@ -2,6 +2,16 @@
 <html lang="en-US">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139261095-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139261095-1');
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script type="text/javascript">
@@ -185,49 +195,50 @@
                                             data-form_unique_num="0">
                                             <div class="et-pb-contact-message"></div>
                                             <div class="et_pb_contact">
-                                                <form class="" method="post" action="mailto:thegeeksontv@gmail.com?subject=Enquiries" enctype="text/plain">
+                                                <form class="" method="post"
+                                                    action="mailto:thegeeksontv@gmail.com?subject=Enquiries"
+                                                    enctype="text/plain">
                                                     <p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_half"
                                                         data-id="first" data-type="input">
                                                         <label for="et_pb_contact_first_0"
                                                             class="et_pb_contact_form_label">First Name</label>
                                                         <input type="text" id="et_pb_contact_first_0" class="input"
-                                                            value="" name="first_name"
-                                                            data-required_mark="required" data-field_type="input"
-                                                            data-original_id="first" placeholder="First Name">
+                                                            value="" name="first_name" data-required_mark="required"
+                                                            data-field_type="input" data-original_id="first"
+                                                            placeholder="First Name">
                                                     </p>
                                                     <p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_half et_pb_contact_field_last"
                                                         data-id="last" data-type="input">
                                                         <label for="et_pb_contact_last_0"
                                                             class="et_pb_contact_form_label">Last Name</label>
                                                         <input type="text" id="et_pb_contact_last_0" class="input"
-                                                            value="" name="last_name"
-                                                            data-required_mark="required" data-field_type="input"
-                                                            data-original_id="last" placeholder="Last Name">
+                                                            value="" name="last_name" data-required_mark="required"
+                                                            data-field_type="input" data-original_id="last"
+                                                            placeholder="Last Name">
                                                     </p>
                                                     <p class="et_pb_contact_field et_pb_contact_field_2 et_pb_contact_field_half"
                                                         data-id="email" data-type="email">
                                                         <label for="et_pb_contact_email_0"
                                                             class="et_pb_contact_form_label">Email Address</label>
                                                         <input type="text" id="et_pb_contact_email_0" class="input"
-                                                            value="" name="email"
-                                                            data-required_mark="required" data-field_type="email"
-                                                            data-original_id="email" placeholder="Email Address">
+                                                            value="" name="email" data-required_mark="required"
+                                                            data-field_type="email" data-original_id="email"
+                                                            placeholder="Email Address">
                                                     </p>
                                                     <p class="et_pb_contact_field et_pb_contact_field_3 et_pb_contact_field_half et_pb_contact_field_last"
                                                         data-id="phone" data-type="email">
                                                         <label for="et_pb_contact_phone_0"
                                                             class="et_pb_contact_form_label">Phone Number</label>
                                                         <input type="text" id="et_pb_contact_phone_0" class="input"
-                                                            value="" name="phone_number"
-                                                            data-required_mark="required" data-field_type="text"
-                                                            data-original_id="phone" placeholder="Phone Number">
+                                                            value="" name="phone_number" data-required_mark="required"
+                                                            data-field_type="text" data-original_id="phone"
+                                                            placeholder="Phone Number">
                                                     </p>
                                                     <p class="et_pb_contact_field et_pb_contact_field_4 et_pb_contact_field_last"
                                                         data-id="message" data-type="text">
                                                         <label for="et_pb_contact_message_0"
                                                             class="et_pb_contact_form_label">Message</label>
-                                                        <textarea name="message"
-                                                            id="et_pb_contact_message_0"
+                                                        <textarea name="message" id="et_pb_contact_message_0"
                                                             class="et_pb_contact_message input"
                                                             data-required_mark="required" data-field_type="text"
                                                             data-original_id="message" placeholder="Message"></textarea>
@@ -237,8 +248,8 @@
                                                     <input type="text" value="" name="et_pb_contactform_validate_0"
                                                         class="et_pb_contactform_validate_field" />
                                                     <div class="et_contact_bottom_container">
-                                                        <button type="submit"
-                                                            class="et_pb_contact_submit et_pb_button" onclick="sendMail(event)">Send
+                                                        <button type="submit" class="et_pb_contact_submit et_pb_button"
+                                                            onclick="sendMail(event)">Send
                                                             Message</button>
                                                     </div>
                                                     <input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0"
@@ -1139,7 +1150,7 @@
 
 
         function sendMail(e) {
-            e.preventDefault(); 
+            e.preventDefault();
             var mailto = 'thegeeksontv@gmail.com';
             var subject = 'Enquiry';
             var first_name = $("input[name='first_name']").val();
@@ -1147,7 +1158,7 @@
             var email = $("input[name='email']").val();
             var message = $("textarea[name='message']").val();
             var body = ['First Name: ', first_name, '%0D%0A', 'Last Name: ', last_name, '%0D%0A', 'Message: ', message].join("");
-            document.location = "mailto:"+mailto+"?subject="+subject+"&body="+body
+            document.location = "mailto:" + mailto + "?subject=" + subject + "&body=" + body
         }
     </script>
 
