@@ -238,7 +238,7 @@
                                                         class="et_pb_contactform_validate_field" />
                                                     <div class="et_contact_bottom_container">
                                                         <button type="submit"
-                                                            class="et_pb_contact_submit et_pb_button">Send
+                                                            class="et_pb_contact_submit et_pb_button" onclick="sendMail(event)">Send
                                                             Message</button>
                                                     </div>
                                                     <input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0"
@@ -1137,6 +1137,18 @@
             $('#menu-btn').is(':checked') ? $(".header-right").css({ display: 'block' }) : $(".header-right").css({ display: 'none' });
         }
 
+
+        function sendMail(e) {
+            e.preventDefault(); 
+            var mailto = 'thegeeksontv@gmail.com';
+            var subject = 'Enquiry';
+            var first_name = $("input[name='first_name']").val();
+            var last_name = $("input[name='last_name']").val();
+            var email = $("input[name='email']").val();
+            var message = $("textarea[name='message']").val();
+            var body = ['First Name: ', first_name, '%0D%0A', 'Last Name: ', last_name, '%0D%0A', 'Message: ', message].join("");
+            document.location = "mailto:"+mailto+"?subject="+subject+"&body="+body
+        }
     </script>
 
 
